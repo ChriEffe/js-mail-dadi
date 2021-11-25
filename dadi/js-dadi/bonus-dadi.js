@@ -2,13 +2,13 @@
 Stabilire il vincitore, in base a chi fa il punteggio più alto.*/
 
 // Lancio utente
-input.addEventListener('click', function () {
+function randomUser() {
     let numUser = Math.floor(Math.random() * 6) + 1;
 
-    // Lancio computer
+// Lancio computer
     let numComputer = Math.floor(Math.random() * 6) + 1;
 
-    // Condizioni
+// Condizioni
     if (numUser > numComputer) {
         document.writeln('Vincitore Utente con ' + numUser + ' a ' + numComputer);
     } else if (numUser < numComputer) {
@@ -16,4 +16,6 @@ input.addEventListener('click', function () {
     } else {
         document.writeln('Pareggio');
     }
-})
+}
+
+
